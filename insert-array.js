@@ -1,11 +1,13 @@
-let data = [40, 30, 12, 25];
+import { data } from "./main.js";
+
+let myArray = data;
 
 let insertValue = 22;
 let insertPosition = 1;
-for (let index = data.length - 1; index >= insertPosition; index--) {
-  data[index + 1] = data[index];
+for (let index = myArray.length - 1; index >= insertPosition; index--) {
+  myArray[index + 1] = myArray[index];
   if (index === insertPosition) {
-    data[index] = insertValue;
+    myArray[index] = insertValue;
   }
 }
-console.warn(data);
+console.warn("myArray: ", myArray);

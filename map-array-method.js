@@ -1,4 +1,6 @@
-var myArray = [40, 30, 12, 25];
+import { data } from "./main.js";
+
+var myArray = data;
 
 Array.prototype.myMap = function (myCallBack) {
   let myNewArray = [];
